@@ -1,14 +1,14 @@
 # PSUSphere
 > a django web application for managing student organizations, their members, and associated university data at Palawan State University.
 
-# FEATURES
+## FEATURES
 - Relational Database Schema
 - admin CRUD Interface
 - Custom Data Generation Command
 - Enhanced Admin Views
 - Dependency Management
 
-# AUTHORS
+## AUTHORS
 <img src="https://avatars.githubusercontent.com/u/225259706?v=4"  style="border-radius: 50%" width=150>
 
 **Name: Ralph Angelo Badang**  
