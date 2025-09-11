@@ -8,18 +8,13 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">
-                {% if object %}
-                  Update College
-                {% else %}
-                  Add New College
-                {% endif %}
-              </div>
+              <div class="card-title">Delete I miss you and lock tf in</div>
               <div class="card-category">Page Subtitle</div>
             </div>
             <div class="col-md-6">
               <div class="card-body">
                 <form class="" action="" method="post" novalidate>
+                  <p>Are you sure you wont miss? "{{ object }}"?</p>
                   {% csrf_token %}
                   {% include 'includes/form.html' %}
                   <div class="form-group">
