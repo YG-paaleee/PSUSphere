@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.github',
+    'pwa',
 ]
 
 if "pythonanywhere" in socket.gethostname():
@@ -161,3 +162,82 @@ ACCOUNT_SIGNUP_FIELDS = [
 "password2*",
 ]
 
+# PWA Settings
+PWA_APP_NAME = 'PSUSphere'
+PWA_APP_DESCRIPTION = "A Progressive Web App for Student Organizations - PSUSphere"
+PWA_APP_THEME_COLOR = '#1b5e20'
+PWA_APP_BACKGROUND_COLOR = '#e8f5e9'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'any'
+PWA_APP_START_URL = '/'
+PWA_APP_STATUS_BAR_COLOR = 'default'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/img/icons/icon-72x72.png',
+        'sizes': '72x72',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-96x96.png',
+        'sizes': '96x96',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-128x128.png',
+        'sizes': '128x128',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-144x144.png',
+        'sizes': '144x144',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-152x152.png',
+        'sizes': '152x152',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-192x192.png',
+        'sizes': '192x192',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-384x384.png',
+        'sizes': '384x384',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    },
+    {
+        'src': '/static/img/icons/icon-512x512.png',
+        'sizes': '512x512',
+        'type': 'image/png',
+        'purpose': 'any maskable'
+    }
+]
+PWA_APP_ICONS_APPLE = [
+    {
+        'src': '/static/img/icons/icon-152x152.png',
+        'sizes': '152x152'
+    },
+    {
+        'src': '/static/img/icons/icon-192x192.png',
+        'sizes': '192x192'
+    }
+]
+PWA_APP_DIR = 'ltr'
+PWA_APP_LANG = 'en-US'
+PWA_APP_SPLASH_SCREEN = [
+    {
+        'src': '/static/img/icons/icon-512x512.png',
+        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+    }
+]
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
